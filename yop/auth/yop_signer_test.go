@@ -6,8 +6,9 @@
 package auth
 
 import (
-	"github.com/fengyuqin/yop-go-sdk/yop/request"
 	"testing"
+
+	"github.com/fengyuqin/yop-go-sdk/yop/request"
 )
 
 func TestRsaSigner_SignRequest(t *testing.T) {
@@ -25,7 +26,7 @@ func buildYopRequest() *request.YopRequest {
 	result.ApiUri = "/rest/v2.0/yop/platform/certs"
 	result.ServerRoot = "http://ycetest.yeepay.com:30228/yop-center"
 	result.HttpMethod = "GET"
-	result.IsvPriKey = priKey
+	result.IsvPriKey = *priKey
 	result.AddParam("name", "testName")
 	result.AddParam("age", 18)
 	return result
