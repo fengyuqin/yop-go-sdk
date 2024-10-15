@@ -9,12 +9,6 @@ import (
 	"bytes"
 	"context"
 	"errors"
-	uuid "github.com/satori/go.uuid"
-	"github.com/yop-platform/yop-go-sdk/yop/auth"
-	"github.com/yop-platform/yop-go-sdk/yop/constants"
-	"github.com/yop-platform/yop-go-sdk/yop/request"
-	"github.com/yop-platform/yop-go-sdk/yop/response"
-	"github.com/yop-platform/yop-go-sdk/yop/utils"
 	"io"
 	"io/ioutil"
 	"log"
@@ -24,6 +18,13 @@ import (
 	"runtime"
 	"strings"
 	"time"
+
+	"github.com/fengyuqin/yop-go-sdk/yop/auth"
+	"github.com/fengyuqin/yop-go-sdk/yop/constants"
+	"github.com/fengyuqin/yop-go-sdk/yop/request"
+	"github.com/fengyuqin/yop-go-sdk/yop/response"
+	"github.com/fengyuqin/yop-go-sdk/yop/utils"
+	uuid "github.com/satori/go.uuid"
 )
 
 var DefaultClient = YopClient{&http.Client{Transport: http.DefaultTransport}}

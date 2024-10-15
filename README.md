@@ -7,10 +7,10 @@ Yeepay openapi SDK fo Go
 ## 使用
 1.引入
 ```go
-"github.com/yop-platform/yop-go-sdk/yop/client"
-"github.com/yop-platform/yop-go-sdk/yop/constants"
-"github.com/yop-platform/yop-go-sdk/yop/request"
-"github.com/yop-platform/yop-go-sdk/yop/utils"
+"github.com/fengyuqin/yop-go-sdk/yop/client"
+"github.com/fengyuqin/yop-go-sdk/yop/constants"
+"github.com/fengyuqin/yop-go-sdk/yop/request"
+"github.com/fengyuqin/yop-go-sdk/yop/utils"
 ```
 2.调用接口</br>
 放在最前面：请求超时时间通过YopRequest.Timeout设置，默认值为10秒<br><br>
